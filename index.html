@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/mine.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="table">
+            <h1 class="info coll__left">Имя</h1>
+            <h1 class="info coll__rigth">Телефон</h1>
+            <ul id="list"></ul>
+        </div>
+        <form class="contacts" id="myForm">
+            <label for="" class="detalis">
+                <span>Пожалуйста введите имя</span>
+                <input type="text" id="name" placeholder="Иван" required>
+                <div class="error"></div>
+            </label>
+            <label for="" class="detalis detalis__two">
+                <span>Пожалуйста введите действительный номер телефона</span>
+                <input type="text" id="phone" placeholder="+79850876522" required>
+                <div class="error"></div>
+            </label>
+            <button class="btn" id="sendButton">Добавить новую запись</button>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="/index.js"></script>
+</html>

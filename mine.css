@@ -1,0 +1,85 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Noto Sans Jp", Arial, Helvetica, sans-serif;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    color: black; 
+}
+
+.wrapper {
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    top: 15%;
+    left: 35%;
+}
+
+.item {
+    margin: 5px 0;
+}
+
+.list {
+    position: fixed;
+    top: 25%;
+}
+
+.close {
+    color: #fff;
+    position: absolute;
+    right: -65px;
+    top: 7px;
+    background: #d00;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+  
+}
+
+.table {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0!important;
+}
+
+.detalis {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25%;
+}
+
+.detalis__two {
+    padding-top: 5%;
+}
+
+.btn {
+    background:red;
+    border-radius: 18px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+    border: none;
+    padding: 15px;
+    margin-top: 5%;
+}
+
+.error {
+    color: red;
+}
