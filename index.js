@@ -46,29 +46,56 @@ const myForm = document.querySelector('#myForm');
 send.addEventListener('click', event => {
     event.preventDefault();
 
-    if (validateForm(myForm)) {
-        const newItem = document.createElement('li');
-        newItem.classList.add('item');
-        newItem.textContent = nameInput.value;
+    // if (validateForm(myForm)) {
+    //     const newItem = document.createElement('li');
+    //     newItem.classList.add('item');
+    //     newItem.textContent = nameInput.value;
     
-        const deleteButton = document.createElement('button');
-        deleteButton.classList.add("close");
-        deleteButton.textContent = 'x';
+    //     const deleteButton = document.createElement('button');
+    //     deleteButton.classList.add("close");
+    //     deleteButton.textContent = 'x';
     
-        deleteButton.addEventListener('click', function() {
-            list.removeChild(newItem);
-        })
-        newItem.appendChild(deleteButton);
-        list.appendChild(newItem);
+    //     deleteButton.addEventListener('click', function() {
+    //         list.removeChild(newItem);
+    //     })
+    //     newItem.appendChild(deleteButton);
+    //     list.appendChild(newItem);
     
-        nameInput.value = '';
+    //     nameInput.value = '';
+    // }
+
+    switch (validateForm(myForm)) {
+        case validateForm(myForm):
+            const newItem = document.createElement('li');
+            newItem.classList.add('item');
+            newItem.textContent = nameInput.value;
+        
+        case validateForm(myForm):
+            const newItemP = document.createElement('li');
+            newItemP.classList.add('item-p');
+            newItemP.textContent = phoneInput.value;
+
+        case validateForm(myForm):
+            const deleteButton = document.createElement('button');
+            deleteButton.classList.add("close");
+            deleteButton.textContent = 'x';
+
+            deleteButton.addEventListener('click', function() {
+                list.removeChild(newItem);
+            })
+            newItem.appendChild(deleteButton);
+            list.appendChild(newItem);
+
+            nameInput.value = '';
+            phoneInput.value = '';
+
     }
 
 });
 
 function validateForm(form) {
     let valid = true;
-
+ 
     if (!validateDetalis(form.elements.name)) {
         valid = false;
     }

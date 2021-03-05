@@ -12,6 +12,16 @@ body {
     color: black; 
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+  }
+  
+
 .wrapper {
     height: 500px;
     width: 500px;
@@ -24,9 +34,10 @@ body {
     margin: 5px 0;
 }
 
-.list {
+.listt {
     position: fixed;
     top: 25%;
+    left: 40%;
 }
 
 .close {
